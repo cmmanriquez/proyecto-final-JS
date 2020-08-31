@@ -123,53 +123,144 @@ html #inicio {
 
 @media only screen and (min-width: 992px) {
   .main__registroDeProcesos--video {
-    padding-top: 28px;
-    max-width: 560px;
-    max-height: 560px; }
-  .main__registroDeProcesos--video:hover {
-    opacity: 0.7; }
+    padding-top: 12px; }
   .main__registroDeProcesos--texto {
+    background-color: rgba(240, 233, 221, 0.4);
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    font-size: 40px;
-    color: #ababab;
-    position: absolute;
-    top: 5%; }
+    font-size: 44px;
+    text-align: right;
+    color: black;
+    position: fixed;
+    top: 60px;
+    left: 400px;
+    padding-right: 20px; }
   .main__registroDeProcesos--texto {
-    --animate-delay: 2s;
+    --animate-delay: 3s;
     --animate-duration: 3s; } }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 401px) and (max-width: 991px) {
   .main__registroDeProcesos--video {
-    padding-top: 150px;
-    max-height: 86%;
-    max-width: 86%; }
+    padding-top: 12px; }
+  .main__registroDeProcesos--texto {
+    background-color: rgba(240, 233, 221, 0.4);
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: right;
+    color: black;
+    position: fixed;
+    top: 60px;
+    left: 50%;
+    padding-right: 20px; }
+  .main__registroDeProcesos--texto {
+    --animate-delay: 3s;
+    --animate-duration: 3s; } }
+
+@media only screen and (max-width: 400px) {
+  .main__registroDeProcesos--video {
+    padding-top: 50px;
+    max-height: 96%;
+    max-width: 96%; }
   .main__registroDeProcesos--texto {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    font-size: 15px;
-    padding: 8px 18px 0 4px;
-    color: black;
+    font-size: 30px;
+    padding: 12px 30px 0 24px;
+    background-color: rgba(240, 233, 221, 0.4);
     position: absolute;
-    top: 0; }
+    top: 50px; }
   .main__registroDeProcesos--texto {
-    --animate-delay: 1s;
-    --animate-duration: 2s; } }
+    --animate-delay: 3s;
+    --animate-duration: 3s; } }
 
 @media only screen and (min-width: 992px) {
-  .main__about {
-    position: relative;
-    display: inline-block;
-    text-align: center; }
-  .main__about--texto {
+  .container__about__video--chico {
+    display: none; }
+  .container__about__video--grande {
+    display: block;
+    margin: auto; }
+  .container__about__texto {
     font-family: 'Lato', sans-serif;
-    font-size: 14px;
     font-weight: 300;
-    color: #ffffff;
-    padding: 30px 40px 0 40px;
+    background-color: rgba(175, 213, 212, 0.4);
+    font-size: 38px;
+    color: black;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); }
-  .main__about--video {
-    padding-top: 0; } }
+    transform: translate(-50%, -50%); } }
+
+@media only screen and (min-width: 401px) and (max-width: 991px) {
+  .container__about__video--chico {
+    display: none; }
+  .container__about__texto {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    background-color: rgba(175, 213, 212, 0.4);
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); } }
+
+@media only screen and (max-width: 400px) {
+  .container__about {
+    padding: 0;
+    margin: 0; }
+  .container__about__video--chico {
+    display: block; }
+  .container__about__video--grande {
+    display: none; }
+  .container__about__texto {
+    text-align: right;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: black;
+    background-color: rgba(175, 213, 212, 0.4);
+    position: absolute;
+    top: 50%;
+    left: 150px;
+    transform: translate(-50%, -50%); } }
+
+.newsletter p {
+  font-family: 'Lato', sans-serif !important;
+  font-weight: 300;
+  font-size: 18px; }
+
+.nav__logo {
+  font-size: 20px !important;
+  font-weight: 300 !important; }
+
+html #inicio__shop {
+  background: url(foto__shop.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.body__texto--shop {
+  font-family: 'Martel', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 60px;
+  font-weight: 200;
+  color: #ffffff;
+  opacity: 0.5;
+  padding: 160px 5px 0 5px; }
+
+.container__nav__logo {
+  margin: 0;
+  padding: 0; }
+
+.nav__logo {
+  font-size: 20px !important;
+  font-weight: 300 !important; }
+
+.textoMultimedia {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 14px; }

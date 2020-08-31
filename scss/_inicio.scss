@@ -7,7 +7,7 @@ $amarillo__claro:#f0e9dd;
 $color__letra: negro;
 $color__fondo:amarillo claro;
 @media only screen and (min-width: 992px){
-  html #inicio{
+html #inicio{
   @if $color__fondo== blanco {
     background: $blanco;
   }
@@ -22,7 +22,7 @@ $color__fondo:amarillo claro;
     background-size: cover; }
   }
 html #inicio{
-    font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 .nav__menu {
   background-color: transparent !important;
@@ -71,14 +71,6 @@ html #inicio{
     display: none;
 }
 }
-
-
-
-
-
-
-
-
 
 html #inicio{
 @if $color__fondo== blanco {

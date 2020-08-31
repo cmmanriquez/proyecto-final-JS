@@ -1,56 +1,70 @@
-$gris__claro:#b59ea3;
-$azul__comun:#3a4594;
-$azul__claro:#d5d9f5;
-$azul__oscuro:#171c4a;
-$blanco:#ffffff;
-$gris__oscuro:#ababab;
-$amarillo__claro:#f0e9dd;
 @media only screen and (min-width: 992px) {
-  .main__registroDeProcesos--video{
-    padding-top: 28px;
-    max-width: 560px;
-    max-height: 560px;
-  }
-.main__registroDeProcesos--video:hover{
-  opacity: 0.7;
+.main__registroDeProcesos--video{
+  padding-top: 12px;
 }
-.main__registroDeProcesos--texto{
-      font-family: 'Lato', sans-serif;
-      font-weight: 300;
-      font-size: 40px;
-      color: $gris__oscuro;
-      position: absolute;
-      top: 5%;
-  }
 
 .main__registroDeProcesos--texto{
-  --animate-delay: 2s;
+  background-color: rgba(240, 233, 221, 0.4);
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 44px;
+  text-align: right;
+  color: black;
+  position: fixed;
+  top: 60px;
+  left: 400px;
+  padding-right: 20px;
+}
+
+.main__registroDeProcesos--texto{
+  --animate-delay: 3s;
   --animate-duration: 3s;
 
 }
 }
 
+@media only screen and (min-width:401px) and (max-width:991px){
+.main__registroDeProcesos--video{
+  padding-top: 12px;
+}
 
+.main__registroDeProcesos--texto{
+  background-color: rgba(240, 233, 221, 0.4);
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  text-align: right;
+  color: black;
+  position: fixed;
+  top: 60px;
+  left: 50%;
+  padding-right: 20px;
+}
 
+.main__registroDeProcesos--texto{
+  --animate-delay: 3s;
+  --animate-duration: 3s;
+}
+}
 
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 400px){
 
  .main__registroDeProcesos--video{
-  padding-top: 150px;
-  max-height: 86%;
-  max-width: 86%;
+  padding-top: 50px;
+  max-height: 96%;
+  max-width: 96%;
 }
 .main__registroDeProcesos--texto{
-      font-family: 'Lato', sans-serif;
-      font-weight: 300;
-      font-size: 15px;
-      padding: 8px 18px 0 4px;
-      color: black;
-      position: absolute;
-      top: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  padding: 12px 30px 0 24px;
+  background-color: rgba(240, 233, 221, 0.4);
+  position: absolute;
+  top: 50px;
   }
   .main__registroDeProcesos--texto{
-    --animate-delay: 1s;
-    --animate-duration: 2s;}
+  --animate-delay: 3s;
+  --animate-duration: 3s;}
 
 }
