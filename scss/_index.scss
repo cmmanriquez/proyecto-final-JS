@@ -1,4 +1,5 @@
 $blanco:#ffffff;
+
 html #index{
   background: url(gif__index.gif) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -12,11 +13,12 @@ a{
 }
 
 .body__textoInicial{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Martel', serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 44px;
+  font-size: 40px;
+  font-weight: 200;
   color: $blanco;
   padding: 60px 5px 0 5px;
 }
@@ -36,12 +38,12 @@ a{
 }
 
 .body__textoInicial{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Martel', serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 80px;
-  font-weight: 100;
+  font-size: 70px;
+  font-weight: 200;
   color: $blanco;
   padding: 60px 5px 0 5px;}
 }

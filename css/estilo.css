@@ -9,11 +9,12 @@ a {
   text-decoration: none; }
 
 .body__textoInicial {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Martel', serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 44px;
+  font-size: 40px;
+  font-weight: 200;
   color: #ffffff;
   padding: 60px 5px 0 5px; }
 
@@ -27,11 +28,148 @@ a {
   a {
     text-decoration: none; }
   .body__textoInicial {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Martel', serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 80px;
-    font-weight: 100;
+    font-size: 70px;
+    font-weight: 200;
     color: #ffffff;
     padding: 60px 5px 0 5px; } }
+
+@media only screen and (min-width: 992px) {
+  html #inicio {
+    background: #f0e9dd; }
+  html #inicio {
+    font-family: 'Lato', sans-serif; }
+  .nav__menu {
+    background-color: transparent !important; }
+  .nav__logo {
+    font-size: 20px !important;
+    font-weight: 300 !important; }
+  .nav__menuObra {
+    background-color: #f0e9dd !important;
+    border-color: transparent;
+    opacity: 0.91; }
+  .nav__menuObraItem:hover {
+    text-decoration: underline;
+    background-color: transparent; }
+  .container .nav__boton {
+    background-color: transparent;
+    border-color: transparent; }
+  .container__video {
+    padding-top: 25px; }
+  .nav__logo, .nav__menu--boton, .nav__noObraItem {
+    color: black !important; }
+  .nav__noObraItem:hover {
+    text-decoration: underline; }
+  .nav__menu--boton:hover {
+    text-decoration: underline; }
+  .nav__menu--boton::after {
+    display: none; } }
+
+html #inicio {
+  background: #f0e9dd; }
+
+.nav__menu {
+  background-color: transparent !important; }
+
+.nav__menu--boton, .nav__noObraItem {
+  padding-left: 8px !important;
+  font-weight: 300; }
+
+.nav__logo {
+  font-size: 20px;
+  font-weight: 300; }
+
+.nav__boton {
+  font-size: 14px;
+  padding-top: 12px;
+  font-weight: 100; }
+
+.nav__menuObra {
+  background-color: #f0e9dd !important;
+  border-color: transparent;
+  opacity: 0.91; }
+
+.container .nav__boton {
+  color: black !important;
+  background-color: transparent;
+  border-color: transparent; }
+
+.nav__menuObraItem {
+  color: black !important;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: 'Lato', sans-serif; }
+
+.nav__logo, .nav__menu--boton, .nav__noObraItem {
+  color: black !important;
+  font-family: 'Lato', sans-serif; }
+
+.nav__noObraItem:hover {
+  text-decoration: underline; }
+
+.nav__menu--boton:hover {
+  text-decoration: underline; }
+
+.nav__menu--boton::after {
+  display: none; }
+
+.container__video {
+  max-width: 95%;
+  max-height: 95%;
+  padding-top: 30px; }
+
+@media only screen and (min-width: 992px) {
+  .main__registroDeProcesos--video {
+    padding-top: 28px;
+    max-width: 560px;
+    max-height: 560px; }
+  .main__registroDeProcesos--video:hover {
+    opacity: 0.7; }
+  .main__registroDeProcesos--texto {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: #ababab;
+    position: absolute;
+    top: 5%; }
+  .main__registroDeProcesos--texto {
+    --animate-delay: 2s;
+    --animate-duration: 3s; } }
+
+@media only screen and (max-width: 375px) {
+  .main__registroDeProcesos--video {
+    padding-top: 150px;
+    max-height: 86%;
+    max-width: 86%; }
+  .main__registroDeProcesos--texto {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    padding: 8px 18px 0 4px;
+    color: black;
+    position: absolute;
+    top: 0; }
+  .main__registroDeProcesos--texto {
+    --animate-delay: 1s;
+    --animate-duration: 2s; } }
+
+@media only screen and (min-width: 992px) {
+  .main__about {
+    position: relative;
+    display: inline-block;
+    text-align: center; }
+  .main__about--texto {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+    padding: 30px 40px 0 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .main__about--video {
+    padding-top: 0; } }

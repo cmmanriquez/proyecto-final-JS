@@ -1,0 +1,30 @@
+$azul__comun:#3a4594;
+$azul__claro:#d5d9f5;
+$azul__oscuro:#171c4a;
+$blanco:#ffffff;
+$gris__oscuro:#ababab;
+$amarillo__claro:#f0e9dd;
+$color__letra: negro;
+$color__fondo:amarillo claro;
+
+@media only screen and (min-width: 992px) {
+.main__about{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  }
+.main__about--texto{
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: $blanco;
+  padding: 30px 40px 0 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+.main__about--video{
+  padding-top: 0;
+}
+}
