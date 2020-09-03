@@ -1,7 +1,7 @@
-$blanco:#ffffff;
+$blanco:#fffdf2;
 
 html #inicio__shop{
-  background: url(foto__shop.jpg) no-repeat center center fixed;
+  background: url(gif__shop.gif) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -16,13 +16,22 @@ html #inicio__shop{
   font-size: 60px;
   font-weight: 200;
   color: $blanco;
-  opacity: 0.5;
   padding: 160px 5px 0 5px;
 }
 .container__nav__logo{
   margin: 0;
   padding: 0;
 }
-.nav__logo {
+.nav__logo--shop {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: $blanco !important;
   font-size: 20px !important;
-  font-weight: 300 !important; }
+}
+
+@media only screen and (max-width: 399px){
+  .body__texto--shop{
+    font-size: 32px;
+  }
+
+}

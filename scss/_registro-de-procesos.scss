@@ -29,12 +29,31 @@ $gris__calido:#363130;
 }
 }
 
+@media only screen and (min-width: 401px)and(max-width: 991px){
+  .main__registroDeProcesos--video{
+   padding-top: 350px;
+   max-width: 96%;
+ }
+
+.main__registroDeProcesos--texto{
+  font-family: 'Lato', sans-serif;
+  background-color: rgba(245, 221, 144, 0.5);
+  font-weight: 300;
+  font-size: 28px;
+  color: $gris__calido;
+  text-align: left;
+  position: absolute;
+  top: 40px;
+}
+}
+
 @media only screen and (max-width: 400px){
 
  .main__registroDeProcesos--video{
   padding-top: 150px;
-  max-width: 96%;
+  max-width: 90%;
 }
+
 .main__registroDeProcesos--texto{
   font-family: 'Lato', sans-serif;
   font-weight: 300;
@@ -47,6 +66,6 @@ $gris__calido:#363130;
   }
   .main__registroDeProcesos--texto{
   --animate-delay: 3s;
-  --animate-duration: 3s;}
-
+  --animate-duration: 3s;
+}
 }

@@ -144,10 +144,24 @@ html #inicio {
   .main__registroDeProcesos--texto-chico {
     font-size: 20px; } }
 
+@media only screen and (min-width: 401px) and (max-width: 991px) {
+  .main__registroDeProcesos--video {
+    padding-top: 350px;
+    max-width: 96%; }
+  .main__registroDeProcesos--texto {
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(245, 221, 144, 0.5);
+    font-weight: 300;
+    font-size: 28px;
+    color: #363130;
+    text-align: left;
+    position: absolute;
+    top: 40px; } }
+
 @media only screen and (max-width: 400px) {
   .main__registroDeProcesos--video {
     padding-top: 150px;
-    max-width: 96%; }
+    max-width: 90%; }
   .main__registroDeProcesos--texto {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
@@ -161,7 +175,7 @@ html #inicio {
     --animate-delay: 3s;
     --animate-duration: 3s; } }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 992px) {
   .container__about__video--chico {
     display: none; }
   .container__about__texto {
@@ -173,9 +187,31 @@ html #inicio {
     top: 40%;
     padding-right: 20px; } }
 
-@media only screen and (max-width: 399px) {
+@media only screen and (min-width: 401px) and (max-width: 991px) {
+  .container__about__video--chico {
+    display: none; }
   .container__about__video--grande {
-    display: none; } }
+    padding-top: 20px;
+    max-width: 96%; }
+  .container__about__texto {
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(245, 221, 144, 0.5);
+    font-weight: 300;
+    font-size: 28px;
+    color: #363130;
+    text-align: right; } }
+
+@media only screen and (max-width: 400px) {
+  .container__about__video--grande {
+    display: none; }
+  .container__about__texto {
+    background-color: rgba(245, 221, 144, 0.5);
+    font-family: 'Lato', sans-serif;
+    font-weight: 300px;
+    font-size: 16px;
+    position: fixed;
+    top: 40%;
+    padding-right: 20px; } }
 
 .newsletter {
   background-color: rgba(245, 221, 144, 0.3); }
@@ -194,7 +230,7 @@ html #inicio {
     max-width: 90%; } }
 
 html #inicio__shop {
-  background: url(foto__shop.jpg) no-repeat center center fixed;
+  background: url(gif__shop.gif) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -207,17 +243,22 @@ html #inicio__shop {
   align-items: center;
   font-size: 60px;
   font-weight: 200;
-  color: #ffffff;
-  opacity: 0.5;
+  color: #fffdf2;
   padding: 160px 5px 0 5px; }
 
 .container__nav__logo {
   margin: 0;
   padding: 0; }
 
-.nav__logo {
-  font-size: 20px !important;
-  font-weight: 300 !important; }
+.nav__logo--shop {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #fffdf2 !important;
+  font-size: 20px !important; }
+
+@media only screen and (max-width: 399px) {
+  .body__texto--shop {
+    font-size: 32px; } }
 
 @media only screen and (min-width: 992px) {
   .textoMultimedia {
@@ -234,7 +275,16 @@ html #inicio__shop {
     grid-row-gap: 10px;
     grid-column-gap: 8px; } }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (min-width: 401px) and (max-width: 991px) {
+  .textoMultimedia {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300; }
+  .textoMultimedia--texto {
+    font-size: 22px; }
+  .textoMultimedia--año {
+    font-size: 14px; } }
+
+@media only screen and (max-width: 400px) {
   .container__video--exterior, .container__video {
     padding: 0; }
   .textoMultimedia {
