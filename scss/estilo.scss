@@ -5,3 +5,112 @@
 @import "contacto.scss";
 @import "shop.scss";
 @import "cuerpo-de-obra.scss";
+
+@media only screen and (min-width: 992px){
+  .nav__menu{
+    background-color: transparent !important;
+    padding-top: 20px;
+}
+  .nav__logo{
+    font-size: 20px !important;
+    font-weight: 300 !important;
+}
+
+  .nav__menuObra{
+    background-color: $amarillo__claro !important;
+    border-color: transparent;
+    opacity: 0.91;
+}
+  .nav__menuObraItem:hover{
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+  .container .nav__boton{
+    background-color: transparent;
+    border-color: transparent !important;
+}
+  .container__video{
+    padding-top: 25px;
+}
+
+  .nav__logo, .nav__menu--boton, .nav__noObraItem{
+    color: black;
+    font-weight: 300;
+}
+
+  .nav__menuObraItem{
+    font-weight: 300;
+}
+
+  .nav__noObraItem:hover{
+    text-decoration: underline;
+}
+
+  .nav__menu--boton:hover{
+    text-decoration: underline;
+}
+
+  .nav__menu--boton::after{
+      display: none;
+}
+}
+
+@media only screen and (max-width: 991px){
+  .nav__menu{
+    background-color: transparent !important;
+}
+
+  .nav__menu--boton, .nav__noObraItem{
+    padding-left: 8px !important;
+    font-weight: 300;
+}
+
+  .nav__logo{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+  .nav__boton{
+    font-size: 14px;
+    padding-top: 12px;
+    font-weight: 100;
+}
+
+  .nav__menuObra{
+    background-color: $amarillo__claro !important;
+    border-color: transparent;
+    opacity: 0.91;
+    font-weight: 300;
+}
+
+  .container .nav__boton,{
+    color:black !important;
+    background-color: transparent;
+    border-color: transparent !important;
+}
+
+  .nav__menuObraItem{
+    color:black !important;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+}
+
+  .nav__logo, .nav__menu--boton, .nav__noObraItem{
+    color:black !important;
+    font-family: 'Lato', sans-serif;
+}
+
+  .nav__noObraItem:hover{
+    text-decoration: underline;
+}
+
+  .nav__menu--boton:hover{
+    text-decoration: underline;
+}
+
+  .nav__menu--boton::after{
+      display: none;
+}
+}
