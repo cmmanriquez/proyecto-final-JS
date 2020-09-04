@@ -1,52 +1,57 @@
 @media only screen and (min-width: 992px){
-.container__about__video--chico{
-  display: none;
+
+  .container__about{
+    display: grid;
+    grid-template-areas:
+    "video03 video02"
+    "texto video02"
+    "video01 video04";
+    grid-template-columns: 600px 600px;
+    grid-template-rows: 500px 200px 400px;
 }
 
-.container__about__texto{
-  background-color: rgba(245, 221, 144, 0.5);
-  font-family: 'Lato', sans-serif;
-  font-weight: 300px;
-  font-size: 26px;
-  position: fixed;
-  top: 40%;
-  padding-right: 20px;
-
-}
+  .container__about--texto{
+    font-family: 'Ovo', serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: left;
+    padding: 0 200px 0 0;
 }
 
-@media only screen and (min-width: 401px)and(max-width: 991px){
-  .container__about__video--chico{
-    display: none;
+  .container__about__video--01{
+    padding: 0 0 0 20px;
 }
 
-.container__about__video--grande{
-  padding-top: 20px;
-  max-width: 96%;
+  .container__about__video--02{
+    padding: 260px 0 0 200px;
 }
 
-.container__about__texto{
-  font-family: 'Lato', sans-serif;
-  background-color: rgba(245, 221, 144, 0.5);
-  font-weight: 300;
-  font-size: 28px;
-  color: $gris__calido;
-  text-align: right;
+  .container__about__video--03{
+    padding: 350px 0 0 40px;
+}
+
+  .container__about__video--04{
+    padding: 160px 0 0 80px;
 }
 }
 
-@media only screen and (max-width: 400px){
-.container__about__video--grande{
-  display: none;
+@media only screen and (max-width: 991px){
+
+  .container__about--texto{
+    font-family: 'Ovo', serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: left;
+    padding: 30px 0 30px 0;
+    margin: 0;
 }
 
-.container__about__texto{
-  background-color: rgba(245, 221, 144, 0.5);
-  font-family: 'Lato', sans-serif;
-  font-weight: 300px;
-  font-size: 16px;
-  position: fixed;
-  top: 40%;
-  padding-right: 20px;
+  .container__about__video--01, .container__about__video--02,
+  .container__about__video--03, .container__about__video--04{
+    padding-top: 30px;
+}
+
+  .container__about__video--01{
+    padding-bottom: 30px;
 }
 }

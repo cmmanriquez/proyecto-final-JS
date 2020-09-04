@@ -1,4 +1,4 @@
-$amarillo__claro:#f0e9dd;
+$amarillo__claro:#f5f5eb;
 
 html #inicio{
   font-family: 'Lato', sans-serif;
@@ -7,50 +7,58 @@ html #inicio{
 
 @media only screen and (min-width: 992px){
   .inicio__texto--01{
-    font-weight: 300;
+    font-family: 'Ovo', serif;
+    font-weight: 400;
     font-size: 14px;
     text-align: left;
+    padding: 300px 200px 0 100px;
 }
 
   .inicio__texto--02{
-    font-weight: 300;
+    font-family: 'Ovo', serif;
+    font-weight: 400;
     font-size: 14px;
     text-align: left;
-}
-
-
-
-  .container__inicio{
-    display: grid;
-    grid-template-areas:
-    "video01 texto01"
-    "texto02 video03"
+    padding: 260px 0 0 40px;
 }
 
   .inicio__video--01{
-    grid-area: video01;
-    padding: 100px 0 0 0;
-}
-
-  .inicio__texto--01{
-    grid-area: texto01;
-    padding: 260px 0 0 120px;
-}
-
-  .inicio__texto--02{
-    grid-area: texto02;
-    padding: 280px 0 0 20px;
-}
-
-  .inicio__video--03{
-    grid-area: video03;
-    padding: 160px 0 80px 250px;
+    padding: 180px 0 0 200px;
 }
 
   .inicio__video--02{
     position: absolute;
-    top: 800px;
-    left: 120px;
+    top: 600px;
+    left: 760px;
+}
+
+  .inicio__video--03{
+    padding: 80px 0 0 0;
+}
+
+  .container__inicio{
+    display: grid;
+    grid-template-areas:
+    "video03 texto01"
+    "texto02 video01";
+    grid-template-columns: 500px auto;
+    grid-template-rows: 700px 500px;
+}
+
+  .inicio__video--01{
+    grid-area: video01;
+}
+
+  .inicio__texto--01{
+    grid-area: texto01;
+}
+
+  .inicio__texto--02{
+    grid-area: texto02;
+}
+
+  .inicio__video--03{
+    grid-area: video03;
 }
 }
 
@@ -60,25 +68,26 @@ html #inicio{
 }
 
   .inicio__texto--01{
-    font-weight: 300;
+    font-family: 'Ovo', serif;
+    font-weight: 400;
     font-size: 14px;
     text-align: left;
-    padding: 30px 0 30px 0;
+    padding: 30px 14px 30px 14px;
 }
 
   .inicio__texto--02{
-    font-weight: 300;
+    font-family: 'Ovo', serif;
+    font-weight: 400;
     font-size: 14px;
     text-align: left;
-    padding: 30px 0 30px 0;
+    padding: 30px 14px 30px 14px;
 }
 
-    .inicio__video--01, .inicio__video--02, .inicio__video--03{
-      max-width: 99%
+  .inicio__video--01, .inicio__video--02, .inicio__video--03{
+    max-width: 94%
 }
 
   .inicio__video--02{
     padding-bottom: 40px;
-  }
-
+}
 }
