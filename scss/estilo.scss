@@ -11,9 +11,10 @@
     background-color: transparent !important;
     padding-top: 20px;
 }
-  .nav__logo{
+  .nav__logo, .nav__logo--sinenlace{
     font-size: 20px !important;
     font-weight: 300 !important;
+    text-decoration: none !important;
 }
 
   .nav__menuObra{
@@ -34,7 +35,7 @@
     padding-top: 25px;
 }
 
-  .nav__logo, .nav__menu--boton, .nav__noObraItem{
+  .nav__logo, .nav__menu--boton, .nav__noObraItem, .nav__logo--sinenlace{
     color: black !important;
     font-weight: 300;
 }
@@ -62,6 +63,25 @@
     padding: 0 0 10px 10px;
 }
 
+  a.nav__logo--inicio{
+    position: absolute;
+    display: none;
+    font-size: 20px !important;
+    font-weight: 300 !important;
+    text-decoration: none !important;
+    color: black;
+    text-align: center;
+    padding-left: 30px;
+}
+
+  a.nav__logo:hover + a.nav__logo--inicio{
+    display: block;
+}
+
+  a.nav__logo:hover{
+    display: none;
+}
+
 }
 
 @media only screen and (max-width: 991px){
@@ -74,9 +94,18 @@
     font-weight: 300;
 }
 
-  .nav__logo{
+  .nav__logo, .nav__logo--sinenlace{
     font-size: 20px;
     font-weight: 300;
+}
+
+  a.nav__logo{
+    text-decoration: none;
+}
+
+  a.nav__logo--inicio{
+    position: absolute;
+    display: none;
 }
 
   .nav__boton{

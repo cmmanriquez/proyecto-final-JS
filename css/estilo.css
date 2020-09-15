@@ -14,13 +14,21 @@
     font-weight: 200;
     color: #ffffff;
     font-size: 40px;
-    position: absolute; } }
+    position: absolute;
+    top: 200px;
+    left: 40%; } }
 
 html #inicio {
   font-family: 'Lato', sans-serif;
   background: #f5f5eb; }
 
 @media only screen and (min-width: 992px) {
+  .inicio__texto--movimiento {
+    font-family: 'Ovo', serif;
+    font-weight: 400;
+    font-size: 100px;
+    position: absolute;
+    top: 700px; }
   .inicio__texto--01 {
     font-family: 'Ovo', serif;
     font-weight: 400;
@@ -56,6 +64,12 @@ html #inicio {
     grid-area: video03; } }
 
 @media only screen and (max-width: 991px) {
+  .inicio__texto--movimiento {
+    font-family: 'Ovo', serif;
+    font-weight: 400;
+    font-size: 60px;
+    position: absolute;
+    top: 400px; }
   .container__inicio {
     padding: 0; }
   .inicio__texto--01 {
@@ -265,9 +279,10 @@ html #inicio__shop {
   .nav__menu {
     background-color: transparent !important;
     padding-top: 20px; }
-  .nav__logo {
+  .nav__logo, .nav__logo--sinenlace {
     font-size: 20px !important;
-    font-weight: 300 !important; }
+    font-weight: 300 !important;
+    text-decoration: none !important; }
   .nav__menuObra {
     background-color: #f5f5eb !important;
     border-color: transparent;
@@ -280,7 +295,7 @@ html #inicio__shop {
     border-color: transparent !important; }
   .container__video {
     padding-top: 25px; }
-  .nav__logo, .nav__menu--boton, .nav__noObraItem {
+  .nav__logo, .nav__menu--boton, .nav__noObraItem, .nav__logo--sinenlace {
     color: black !important;
     font-weight: 300; }
   .nav__menuObraItem {
@@ -296,7 +311,20 @@ html #inicio__shop {
     font-weight: 300;
     color: black;
     font-size: 10px;
-    padding: 0 0 10px 10px; } }
+    padding: 0 0 10px 10px; }
+  a.nav__logo--inicio {
+    position: absolute;
+    display: none;
+    font-size: 20px !important;
+    font-weight: 300 !important;
+    text-decoration: none !important;
+    color: black;
+    text-align: center;
+    padding-left: 30px; }
+  a.nav__logo:hover + a.nav__logo--inicio {
+    display: block; }
+  a.nav__logo:hover {
+    display: none; } }
 
 @media only screen and (max-width: 991px) {
   .nav__menu {
@@ -304,9 +332,14 @@ html #inicio__shop {
   .nav__menu--boton, .nav__noObraItem {
     padding-left: 8px !important;
     font-weight: 300; }
-  .nav__logo {
+  .nav__logo, .nav__logo--sinenlace {
     font-size: 20px;
     font-weight: 300; }
+  a.nav__logo {
+    text-decoration: none; }
+  a.nav__logo--inicio {
+    position: absolute;
+    display: none; }
   .nav__boton {
     font-size: 14px;
     padding-top: 12px;

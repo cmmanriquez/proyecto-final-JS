@@ -6,6 +6,15 @@ html #inicio{
 }
 
 @media only screen and (min-width: 992px){
+
+  .inicio__texto--movimiento{
+    font-family: 'Ovo', serif;
+    font-weight: 400;
+    font-size: 100px;
+    position: absolute;
+    top: 700px;
+  }
+
   .inicio__texto--01{
     font-family: 'Ovo', serif;
     font-weight: 400;
@@ -63,6 +72,14 @@ html #inicio{
 }
 
 @media only screen and (max-width: 991px){
+  .inicio__texto--movimiento{
+    font-family: 'Ovo', serif;
+    font-weight: 400;
+    font-size: 60px;
+    position: absolute;
+    top: 400px;
+  }
+
   .container__inicio{
     padding: 0;
 }
