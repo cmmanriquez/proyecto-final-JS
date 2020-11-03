@@ -1,11 +1,60 @@
 $blanco:#fffdf2;
+$amarillo__claro:#f5f5eb;
 
 html #inicio__shop{
-  background: url(foto__shop.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: $amarillo__claro;
+}
+
+.nav__logo--shop{
+  padding: none;
+}
+
+@media only screen and (min-width: 992px){
+.container__shop--interno{
+  display: grid;
+  grid-template-areas:
+  "noShop01 interno01 interno02 interno03"
+  "noShop02 interno04 interno05 interno06"
+}
+.container__shop--interno01, .container__shop--interno02, .container__shop--interno03,
+.container__shop--interno04, .container__shop--interno05, .container__shop--interno06{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.container__shop--interno-imagen01{
+  grid-area: "noShop01";
+}
+
+.container__shop--interno-imagen02{
+  grid-area: "noShop02";
+}
+
+.container__shop--interno01{
+  grid-area: "interno01";
+}
+
+.container__shop--interno02{
+  grid-area: "interno02";
+}
+.container__shop--interno03{
+  grid-area: "interno03";
+}
+.container__shop--interno04{
+  grid-area: "interno04";
+}
+.container__shop--interno05{
+  grid-area: "interno05";
+}
+.container__shop--interno06{
+  grid-area: "interno06";
+}
+
+.botonShop{
+  font-size: 30%;
 }
 
 .body__texto--shop{
@@ -27,12 +76,60 @@ html #inicio__shop{
 .nav__logo--shop {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  color: $blanco !important;
+  color: black !important;
   font-size: 20px !important;
+}
+
+.container__shop--interno-imagen{
+  opacity: 0.8;
+}
+
+.container__shop--interno-imagen, .container__shopInternoImagenMovimiento{
+  padding-top: 8px;
+}
+
+img.container__shopInternoImagenMovimiento:hover{
+opacity:1;
+transition: 0.5s ease;
+}
+
+img.container__shopInternoImagenMovimiento{
+opacity:0.8;
+transition: 1s ease;
+padding: 40px 0 20px 0;
+}
+
+.container__shop--interno-imagen01, .container__shop--interno-imagen02{
+  padding-top: 40px;
+}
+
 }
 
 @media only screen and (max-width: 991px){
   .body__texto--shop{
     font-size: 32px;
 }
+
+.nav__logo--shop {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: black !important;
+  font-size: 20px !important;
+}
+
+.nav__logo--shop{
+  padding: none;
+  margin: none;
+}
+
+.container__shop--interno-imagen, .container__shopInternoImagenMovimiento{
+  padding: 8px 0 0 50px;
+}
+
+.container__shop--interno-imagen{
+  opacity: 0.8;
+}
+
+
+
 }

@@ -27,5 +27,32 @@ $blanco:#ffffff;
     position: absolute;
     top: 200px;
     left: 40%;
+  }
 }
+
+@media only screen and (max-width: 991px){
+
+  html{
+    padding: 0;
+    margin: 0;
+  }
+
+  .index__body{
+    margin: 0;
+    padding: 0;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  .index__texto{
+    font-family: 'Martel', serif;
+    font-weight: 60;
+    color: $blanco;
+    font-size: 30px;
+    position: absolute;
+    top: 100px;
+    left: 20%;
+  }
 }
