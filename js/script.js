@@ -67,21 +67,22 @@
 // var resultadoDeCompraDos = JSON.parse(localStorage.getItem("Carro")); // Texto a objeto
 // console.log(resultadoDeCompraDos);
 
-document.getElementById("boton").addEventListener("click", FuncionShop);
 
-function FuncionShop() {
-  alert("Las piezas aún no están listas para la venta, por favor vuelve pronto");
+var botonesShop = document.getElementsByClassName('botonShop');
+for(button of botonesShop){
+   button.addEventListener('click', ActividadDelShop);
 }
 
-// function FuncionDelShop(){
-//     alert("Las piezas aún no se encuentran disponibles");
-//     var botonDelShop = document.getElementsByClassName("container__shopInternoImagenMovimiento")[0];
-//     botonDelShop.style.opacity = "0.5";
-// }
+//var imagenDelShop = document.getElementsByTagName('container__shopInternoImagenMovimiento');
+    
 
-// document.getElementsByClassName("botonShop").addEventListener("click", FuncionDelShop);
 
-// document.addEventListener("click", FuncionDelShop);
+function ActividadDelShop(){
+    alert("Las piezas aún no están disponibles para ser compradas");
+    imagenDelShop.style.opacity = "0.5";
+
+}
+
 
 
 
