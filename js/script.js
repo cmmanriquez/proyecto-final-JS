@@ -1,5 +1,7 @@
 // class Producto{
-//     constructor(tipo, precio, cantidad){
+//     constructor(id, img, tipo, precio, cantidad){
+//         this.id = id;
+//         this.img = img;
 //         this.tipo = tipo;
 //         this.precio = precio;
 //         this.cantidad = cantidad;
@@ -14,6 +16,10 @@
 //     }
 // }
 
+
+
+
+
 // var cantidadDePiezasAComprar = Number(prompt('Ingrese la cantidad de piezas que desea comprar'));
 // var primeraCompra = new Producto('Jarrón', 2700, cantidadDePiezasAComprar);
 // primeraCompra.cantidadComprada();
@@ -24,7 +30,56 @@
 // segundaCompra.cantidadComprada();
 // segundaCompra.totalDeLaCompra();
 
-// // esto no va si está el array de abajo
+
+
+
+// //      LOCALSTORAGE ---- A MEJORAR
+// localStorage.setItem("Carro", JSON.stringify(primeraCompra)); // Objeto a texto
+// var resultadoDeCompra = JSON.parse(localStorage.getItem("Carro")); // Texto a objeto
+// console.log(resultadoDeCompra);
+
+// localStorage.setItem("CarroDos", JSON.stringify(segundaCompra)); // Objeto a texto
+// var resultadoDeCompraDos = JSON.parse(localStorage.getItem("CarroDos")); // Texto a objeto
+// console.log(resultadoDeCompraDos);
+
+
+
+
+
+
+
+//COSAS QUE QUIERO MEJORAR
+
+//      Acá la idea es que la persona ingrese el nombre del producto en el prompt (que ideamente en el futuro vaya a ser en un buscador)
+//      y devuelva si la pieza está disponible en el stock o no.
+//      No logré resolverlo, no supe cómo recorrer el array y que en ese recorrido chequee si están o no las piezas.
+
+
+//          VERSION 1
+// var piezaIngresada = prompt('Ingrese el tipo de pieza que desea comprar. -Jarrón -Florero -Candelabro');
+// console.log('La pieza ingresada es:' + piezaIngresada);
+// // const inventarioDePiezas = ['jarrón', 'jarro', 'jarra', 'florero', 'flor', 'vaso', 'candelabro'];
+// var piezasAgregadas = piezaIngresada.includes('jarron', 'flor', 'jarrón', 'florero', 'candelabro');
+// if (piezaIngresada === piezasAgregadas){
+//     alert('La Pieza está disponible');
+//     }else{
+//     alert('La pieza que buscas no se encuentra disponible');
+// }
+
+
+//VERSION 2
+// // let piezaIngresada = prompt('Ingrese el nombre del objeto de cerámica que desea comprar.');
+// // console.log(piezaIngresada.toLowerCase());
+// // const inventarioDePiezas = ['jarrón', 'jarro', 'jarra', 'florero', 'flor', 'vaso', 'candelabro'];
+// // if (piezaIngresada == inventarioDePiezas){
+// //     alert('La Pieza está disponible');
+// //     }else{
+// //     alert('La pieza que buscas no se encuentra disponible');
+// // }
+
+
+//      Idealmente este es el carrito que debería usar, pero no sé cómo unir las compras con esto....
+//JSON
 // function CarroDeCompras(){
 //     this.compra = []
 
@@ -37,66 +92,7 @@
 //     }
 // }
 
-// // este array no va si va lo del principio
-// // var arrayDeCompra = []; 
-// // arrayDeCompra.push(primeraCompra);
-// // arrayDeCompra.push(segundaCompra);
-// // console.log(arrayDeCompra);
-
-
-// // let piezaIngresada = prompt('Ingrese el nombre del objeto de cerámica que desea comprar.');
-
-// // console.log(piezaIngresada.toLowerCase());
-
-// // const inventarioDePiezas = ['jarrón', 'jarro', 'jarra', 'florero', 'flor', 'vaso', 'candelabro'];
-
-// // if (piezaIngresada == inventarioDePiezas){
-// //     alert('La Pieza está disponible');
-// //     }else{
-// //     alert('La pieza que buscas no se encuentra disponible');
-// // }
 
 
 
-// //LOCALSTORAGE 
-// localStorage.setItem("Carro", JSON.stringify(primeraCompra)); // Objeto a texto
-// var resultadoDeCompra = JSON.parse(localStorage.getItem("Carro")); // Texto a objeto
-// console.log(resultadoDeCompra);
-
-// localStorage.setItem("Carro", JSON.stringify(segundaCompra)); // Objeto a texto
-// var resultadoDeCompraDos = JSON.parse(localStorage.getItem("Carro")); // Texto a objeto
-// console.log(resultadoDeCompraDos);
-
-
-var botonesShop = document.getElementsByClassName('botonShop');
-for(button of botonesShop){
-   button.addEventListener('click', ActividadDelShop);
-}
-
-//var imagenDelShop = document.getElementsByTagName('container__shopInternoImagenMovimiento');
-    
-
-
-function ActividadDelShop(){
-    alert("Las piezas aún no están disponibles para ser compradas");
-    imagenDelShop.style.opacity = "0.5";
-
-}
-
-
-
-
-
-// var piezaIngresada = prompt('Ingrese el tipo de pieza que desea comprar. -Jarrón -Florero -Candelabro');
-// console.log('La pieza ingresada es:' + piezaIngresada);
-
-// // const inventarioDePiezas = ['jarrón', 'jarro', 'jarra', 'florero', 'flor', 'vaso', 'candelabro'];
-
-// var piezasAgregadas = piezaIngresada.includes('jarron', 'flor', 'jarrón', 'florero', 'candelabro');
-
-// if (piezaIngresada === piezasAgregadas){
-//     alert('La Pieza está disponible');
-//     }else{
-//     alert('La pieza que buscas no se encuentra disponible');
-// }
 
