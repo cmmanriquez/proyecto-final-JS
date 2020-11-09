@@ -23,38 +23,38 @@ function getProductos() {
 
 const DATOS = `[{
   "id": 1,
-  "img": "shop01.jpg",
+  "img": "./multimedia/img/shop01.jpg",
   "tipo": "florero",
   "precio": 2700,
-  "stock": "pieza única"
+  "stock": "Pieza única"
 }, {
   "id": 2,
-  "img": "shop02.jpg",
+  "img": "./multimedia/img/shop02.jpg",
   "tipo": "jarrón",
   "precio": 1700,
-  "stock": "pieza única"
+  "stock": "Pieza única"
 }, {
   "id": 3,
-  "img": "shop03.jpg",
+  "img": "./multimedia/img/shop03.jpg",
   "tipo": "florero",
   "precio": 3000,
-  "stock": "pieza única"
+  "stock": "Pieza única"
 }, {
   "id": 4,
-  "img": "shop04.jpg",
+  "img": "./multimedia/img/shop04.jpg",
   "tipo": "florero",
   "precio": 1700,
-  "stock": "pieza única"
+  "stock": "Pieza única"
 }, {
   "id": 5,
-  "img": "shop05.jpg",
+  "img": "./multimedia/img/shop05.jpg",
   "tipo": "jarrón",
   "precio": 2700,
-  "stock": "pieza única"
+  "stock": "Pieza única"
 }, {
   "id": 6,
-  "img": "shop06.jpg",
+  "img": "./multimedia/img/shop06.jpg",
   "tipo": "florero",
   "precio": 1700,
-  "stock": "pieza única"
+  "stock": "Pieza única"
 }]`
