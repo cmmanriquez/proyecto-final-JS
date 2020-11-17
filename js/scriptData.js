@@ -24,37 +24,37 @@ function getProductos() {
 const DATOS = `[{
   "id": 1,
   "img": "./multimedia/img/shop01.jpg",
-  "tipo": "florero",
-  "precio": 2700,
-  "stock": "Pieza única"
+  "tipo": "Florero, pieza única",
+  "precio": "2.700",
+  "stock": "1"
 }, {
   "id": 2,
   "img": "./multimedia/img/shop02.jpg",
-  "tipo": "jarrón",
-  "precio": 1700,
-  "stock": "Pieza única"
+  "tipo": "Jarrón, pieza única",
+  "precio": "1.700",
+  "stock": "1"
 }, {
   "id": 3,
   "img": "./multimedia/img/shop03.jpg",
-  "tipo": "florero",
-  "precio": 3000,
-  "stock": "Pieza única"
+  "tipo": "Florero, pieza única",
+  "precio": "3.000",
+  "stock": "1"
 }, {
   "id": 4,
   "img": "./multimedia/img/shop04.jpg",
-  "tipo": "florero",
-  "precio": 1700,
-  "stock": "Pieza única"
+  "tipo": "Florero, pieza única",
+  "precio": "1.700",
+  "stock": "1"
 }, {
   "id": 5,
   "img": "./multimedia/img/shop05.jpg",
-  "tipo": "jarrón",
-  "precio": 2700,
-  "stock": "Pieza única"
+  "tipo": "Jarrón, pieza única",
+  "precio": "2.700",
+  "stock": "1"
 }, {
   "id": 6,
   "img": "./multimedia/img/shop06.jpg",
-  "tipo": "florero",
-  "precio": 1700,
-  "stock": "Pieza única"
+  "tipo": "Florero, pieza única",
+  "precio": "1.700",
+  "stock": "1"
 }]`

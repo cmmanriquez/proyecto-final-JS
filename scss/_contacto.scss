@@ -1,6 +1,7 @@
 @media only screen and (min-width: 992px){
 
   .container__contacto{
+    margin-left: 80px;
     display: grid;
     grid-template-areas:
     "video texto01";
@@ -28,15 +29,11 @@
 }
 
   .contacto__video{
-    padding: 100px 0 0 160px;
+    padding: 0 0 0 160px;
 }
 
   .contacto__texto{
-    padding: 180px 0 0 60px;
-}
-
-  .formulario{
-    padding: 220px 0 0 70px;
+    padding: 100px 0 0 40px;
 }
 }
 

@@ -2,13 +2,14 @@ $gris__calido:#363130;
 
 @media only screen and (min-width: 992px){
   .container__registro{
+    margin-left: 80px;
     display: grid;
     grid-template-areas:
     "imagen03 imagen02"
     "texto02 imagen01"
     "video01 texto01";
     grid-template-columns: 400px auto;
-    grid-template-rows: 1000px 700px 600px;
+    grid-template-rows: 500px 400px 800px;
 }
 
   .container__registro__imagen--01{
@@ -36,28 +37,30 @@ $gris__calido:#363130;
 }
 
   .container__registro__imagen--01{
-    padding: 140px 0 0 300px;
+    padding: 0 0 0 240px;
 }
 
   .container__registro__imagen--02{
-    padding: 450px 0 0 200px;
+    padding: 0 0 0 400px;
 }
 
   .container__registro__imagen--03{
-    padding: 180px 0 0 0;
+    padding: 100px 0 0 60px;
 }
 
   .container__registro--texto01{
-    padding: 200px 0 0 80px;
+    padding: 80px 200px 0 80px;
 }
 
-  .container__registro--texto02{
-    padding: 60px 0 0 0;
+.container__registro--texto02{
+  padding: 100px 0 0 100px;
 }
 
   .container__registro__video--01{
-    padding: 60px 0 0 50px;
+    padding: 0 0 0 50px;
 }
+
+
 
   .container__registro--texto01, .container__registro--texto02{
     font-family: 'Ovo', serif;

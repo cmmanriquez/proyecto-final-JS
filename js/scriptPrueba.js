@@ -22,15 +22,13 @@ function crearTarjetas(producto) {
 	
 	let tipoDiv = document.createElement('tipo');
 	tipoDiv.classList = 'tipo';
-	tipoDiv.innerHTML = "Producto: " + producto.tipo;
+	tipoDiv.innerHTML = producto.tipo;
 
 	let precioDiv = document.createElement('precio');
 	precioDiv.classList = 'precio';
-	precioDiv.innerHTML = "Precio: $" + producto.precio;
+	precioDiv.innerHTML = "$" + producto.precio;
 
 	let stockDiv = document.createElement('stock');
-	stockDiv.classList = 'stock';
-	stockDiv.innerHTML = producto.stock;
 
 	let boton = document.createElement('button');
 	boton.classList = 'boton_shop'

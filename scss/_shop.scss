@@ -7,63 +7,116 @@ html #inicio__shop{
 .nav__menu{
   background-color: $amarillo__claro;
 }
-.nav__logo--shop{
-  color: black !important;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  padding: none;
-  background: $amarillo__claro;
-}
+
 
 @media only screen and (min-width: 992px){
-.producto{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0 0 20px 40px;
-}
-.tipo{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  padding: 0 40px 8px 80px;
-}
-.imagen_shop{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-}
-.stock{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  padding: 0 20px 8px 80px;
-}
-.precio{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  padding: 0 20px 8px 80px;
+  .nav__logo--shop{
+    color: black !important;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    padding: none;
+    margin-left: 70px;
+    background: $amarillo__claro;
 }
 
-
-.boton_shop{
-  font-family: 'Lato', sans-serif !important;
-  font-size: 30% !important;
+  #container__shop{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
+  .producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-@media only screen and (max-width: 991px){
+  .imagen_shop{
+    margin: 40px 10px 0 10px;
+}
 
+  .tipo, .boton_shop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    margin: 8px 0 0 25%;
+}
+
+  .precio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin: 0 0 0 40%;
+}
+
+  .tipo, .precio{
+    font-size: 14px;
+}
+
+  .boton_shop{
+    max-width: 26%;
+    margin: 8px 0 0 35%;
+}
+}
+
+@media only screen and (max-width: 600px){
+  .nav__logo--shop{
+    color: black !important;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    padding: none;
+    margin: 30px 0 0 30px;
+    background: $amarillo__claro;
+  }
+
+  #container__shop{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+  .producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+  .imagen_shop{
+    margin: 40px 10px 0 10px;
+}
+
+  .tipo, .boton_shop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    margin: 8px 0 0 25%;
+}
+
+  .precio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin: 0 0 0 40%;
+}
+
+  .tipo, .precio{
+    font-size: 14px;
+}
+
+  .boton_shop{
+    max-width: 26%;
+    margin: 8px 0 0 35%;
+}
 }

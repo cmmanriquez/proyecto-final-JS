@@ -68,6 +68,8 @@ html #inicio {
   .inicio__video--03 {
     padding: 80px 0 0 0; }
   .container__inicio {
+    margin-top: 140px;
+    padding-left: 80px;
     display: grid;
     grid-template-areas: "video03 texto01" "texto02 video01";
     grid-template-columns: 500px auto;
@@ -109,10 +111,11 @@ html #inicio {
 
 @media only screen and (min-width: 992px) {
   .container__registro {
+    margin-left: 80px;
     display: grid;
     grid-template-areas: "imagen03 imagen02" "texto02 imagen01" "video01 texto01";
     grid-template-columns: 400px auto;
-    grid-template-rows: 1000px 700px 600px; }
+    grid-template-rows: 500px 400px 800px; }
   .container__registro__imagen--01 {
     grid-area: imagen01; }
   .container__registro__imagen--02 {
@@ -126,17 +129,17 @@ html #inicio {
   .container__registro--video01 {
     grid-area: video01; }
   .container__registro__imagen--01 {
-    padding: 140px 0 0 300px; }
+    padding: 0 0 0 240px; }
   .container__registro__imagen--02 {
-    padding: 450px 0 0 200px; }
+    padding: 0 0 0 400px; }
   .container__registro__imagen--03 {
-    padding: 180px 0 0 0; }
+    padding: 100px 0 0 60px; }
   .container__registro--texto01 {
-    padding: 200px 0 0 80px; }
+    padding: 80px 200px 0 80px; }
   .container__registro--texto02 {
-    padding: 60px 0 0 0; }
+    padding: 100px 0 0 100px; }
   .container__registro__video--01 {
-    padding: 60px 0 0 50px; }
+    padding: 0 0 0 50px; }
   .container__registro--texto01, .container__registro--texto02 {
     font-family: 'Ovo', serif;
     font-weight: 400;
@@ -165,7 +168,8 @@ html #inicio {
     display: grid;
     grid-template-areas: "video03 video02" "texto video02" "video01 video04";
     grid-template-columns: 600px 600px;
-    grid-template-rows: 500px 200px 400px; }
+    grid-template-rows: 400px 180px 400px;
+    margin-left: 80px; }
   .container__about--texto {
     font-family: 'Ovo', serif;
     font-weight: 400;
@@ -175,11 +179,11 @@ html #inicio {
   .container__about__video--01 {
     padding: 0 0 0 20px; }
   .container__about__video--02 {
-    padding: 260px 0 0 200px; }
+    padding: 90px 0 0 160px; }
   .container__about__video--03 {
-    padding: 350px 0 0 40px; }
+    padding-top: 120px; }
   .container__about__video--04 {
-    padding: 160px 0 0 80px; } }
+    padding: 60px 0 0 80px; } }
 
 @media only screen and (max-width: 991px) {
   .container__about--texto {
@@ -197,6 +201,7 @@ html #inicio {
 
 @media only screen and (min-width: 992px) {
   .container__contacto {
+    margin-left: 80px;
     display: grid;
     grid-template-areas: "video texto01";
     grid-template-columns: 50% 50%;
@@ -213,11 +218,9 @@ html #inicio {
     font-family: 'Ovo', serif;
     font-weight: 400; }
   .contacto__video {
-    padding: 100px 0 0 160px; }
+    padding: 0 0 0 160px; }
   .contacto__texto {
-    padding: 180px 0 0 60px; }
-  .formulario {
-    padding: 220px 0 0 70px; } }
+    padding: 100px 0 0 40px; } }
 
 @media only screen and (max-width: 991px) {
   .contacto__texto, .formulario {
@@ -243,51 +246,85 @@ html #inicio__shop {
 .nav__menu {
   background-color: #f5f5eb; }
 
-.nav__logo--shop {
-  color: black !important;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  padding: none;
-  background: #f5f5eb; }
-
 @media only screen and (min-width: 992px) {
+  .nav__logo--shop {
+    color: black !important;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    padding: none;
+    margin-left: 70px;
+    background: #f5f5eb; }
+  #container__shop {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex-wrap: wrap; }
   .producto {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 0 0 20px 40px; }
-  .tipo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 14px;
-    padding: 0 40px 8px 80px; }
+    justify-content: center; }
   .imagen_shop {
+    margin: 40px 10px 0 10px; }
+  .tipo, .boton_shop {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 10px; }
-  .stock {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    font-size: 14px;
-    padding: 0 20px 8px 80px; }
+    margin: 8px 0 0 25%; }
   .precio {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin: 0 0 0 40%; }
+  .tipo, .precio {
+    font-size: 14px; }
+  .boton_shop {
+    max-width: 26%;
+    margin: 8px 0 0 35%; } }
+
+@media only screen and (max-width: 600px) {
+  .nav__logo--shop {
+    color: black !important;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    font-size: 14px;
-    padding: 0 20px 8px 80px; }
+    font-size: 18px;
+    padding: none;
+    margin: 30px 0 0 30px;
+    background: #f5f5eb; }
+  #container__shop {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex-wrap: wrap; }
+  .producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .imagen_shop {
+    margin: 40px 10px 0 10px; }
+  .tipo, .boton_shop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    margin: 8px 0 0 25%; }
+  .precio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin: 0 0 0 40%; }
+  .tipo, .precio {
+    font-size: 14px; }
   .boton_shop {
-    font-family: 'Lato', sans-serif !important;
-    font-size: 30% !important; } }
+    max-width: 26%;
+    margin: 8px 0 0 35%; } }
 
 @media only screen and (min-width: 992px) {
   .container__obra--externo {
@@ -296,7 +333,7 @@ html #inicio__shop {
     font-family: 'Ovo', serif;
     font-weight: 400;
     font-size: 16px;
-    padding: 80px 0 20px 0; }
+    padding: 200px 0 100px 0; }
   .obra__video {
     padding: 0 20px 0 20px; } }
 
@@ -316,9 +353,12 @@ html #inicio__shop {
 
 @media only screen and (min-width: 992px) {
   .nav__menu {
-    background-color: transparent !important;
-    padding-top: 20px; }
-  .nav__logo, .nav__logo--sinenlace {
+    background-color: #f5f5eb !important;
+    padding-top: 20px;
+    position: fixed !important;
+    top: 0 !important;
+    width: 100%; }
+  .nav__logo {
     font-size: 20px !important;
     font-weight: 300 !important;
     text-decoration: none !important; }
@@ -334,7 +374,7 @@ html #inicio__shop {
     border-color: transparent !important; }
   .container__video {
     padding-top: 25px; }
-  .nav__logo, .nav__menu--boton, .nav__noObraItem, .nav__logo--sinenlace {
+  .nav__logo, .nav__menu--boton, .nav__noObraItem {
     color: black !important;
     font-weight: 300; }
   .nav__menuObraItem {
@@ -350,20 +390,7 @@ html #inicio__shop {
     font-weight: 300;
     color: black;
     font-size: 10px;
-    padding: 0 0 10px 10px; }
-  a.nav__logo--inicio {
-    position: absolute;
-    display: none;
-    font-size: 20px !important;
-    font-weight: 300 !important;
-    text-decoration: none !important;
-    color: black;
-    text-align: center;
-    padding-left: 30px; }
-  a.nav__logo:hover + a.nav__logo--inicio {
-    display: block; }
-  a.nav__logo:hover {
-    display: none; } }
+    padding: 0 0 10px 10px; } }
 
 @media only screen and (max-width: 991px) {
   .nav__menu {
@@ -373,8 +400,7 @@ html #inicio__shop {
     font-weight: 300; }
   .nav__logo, .nav__logo--sinenlace {
     font-size: 20px;
-    font-weight: 300;
-    color: black; }
+    font-weight: 300; }
   a.nav__logo {
     text-decoration: none; }
   a.nav__logo--inicio {

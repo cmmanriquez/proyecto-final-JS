@@ -7,7 +7,8 @@
     "texto video02"
     "video01 video04";
     grid-template-columns: 600px 600px;
-    grid-template-rows: 500px 200px 400px;
+    grid-template-rows: 400px 180px 400px;
+    margin-left: 80px;
 }
 
   .container__about--texto{
@@ -23,15 +24,15 @@
 }
 
   .container__about__video--02{
-    padding: 260px 0 0 200px;
+    padding: 90px 0 0 160px;
 }
 
   .container__about__video--03{
-    padding: 350px 0 0 40px;
+    padding-top: 120px;
 }
 
   .container__about__video--04{
-    padding: 160px 0 0 80px;
+    padding: 60px 0 0 80px;
 }
 }
 
